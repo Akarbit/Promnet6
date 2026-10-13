@@ -1,0 +1,32 @@
+:root {
+  --navy: #0b2545;
+  --blue: #2563eb;
+  --pale: #f3f7ff;
+  --text: #1f2937;
+}
+html { scroll-behavior: smooth; scroll-padding-top: 76px; }
+body { color: var(--text); font-family: system-ui, -apple-system, "Segoe UI", sans-serif; }
+.navbar-brand { letter-spacing: .2px; }
+.hero-section { background: linear-gradient(135deg, #eef5ff 0%, #f8fbff 55%, #e3edff 100%); }
+.hero-section .lead { max-width: 650px; color: #526176; }
+.eyebrow { color: var(--blue); font-size: .78rem; font-weight: 800; letter-spacing: 2px; }
+.section-space { padding-top: 5rem; padding-bottom: 5rem; }
+.section-heading p { max-width: 560px; margin: .75rem auto 0; }
+.skill-card { border: 1px solid #e5eaf2; border-radius: 1rem; box-shadow: 0 12px 30px rgba(15, 35, 70, .06); transition: transform .2s ease, box-shadow .2s ease; }
+.skill-card:hover { transform: translateY(-5px); box-shadow: 0 18px 38px rgba(15, 35, 70, .12); }
+.skill-icon { display: grid; place-items: center; width: 48px; height: 48px; border-radius: 14px; color: #fff; background: var(--navy); font-weight: 800; }
+.portfolio-band { background: var(--pale); }
+.project-panel { padding: 1.5rem; background: #fff; border: 1px solid #e0e9f8; border-radius: 1rem; box-shadow: 0 10px 28px rgba(15, 35, 70, .05); }
+.project-panel .small { color: var(--blue); letter-spacing: 1px; }
+.contact-note { border-left: 3px solid var(--blue); padding: .25rem 0 .25rem 1rem; }
+.contact-form { padding: 1.5rem; border: 1px solid #e5eaf2; border-radius: 1rem; box-shadow: 0 12px 30px rgba(15, 35, 70, .06); }
+.form-control { padding: .75rem .9rem; border-color: #d8e0ec; }
+.form-control:focus { border-color: #8bb2ff; box-shadow: 0 0 0 .2rem rgba(37, 99, 235, .13); }
+.btn-primary { background: var(--blue); border-color: var(--blue); }
+.btn-primary:hover { background: #1d4ed8; border-color: #1d4ed8; }
+footer { color: #dbeafe; background: var(--navy); }
+@media (max-width: 575.98px) {
+  .section-space { padding-top: 3.25rem; padding-bottom: 3.25rem; }
+  .hero-section .display-5 { font-size: 2rem; }
+  .contact-form { padding: 1.1rem; }
+}
